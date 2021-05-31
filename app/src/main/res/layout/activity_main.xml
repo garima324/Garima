@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to GST Calculator"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/View1"
+        android:layout_height="50dp"
+        android:text="Enter the amount"
+        android:layout_marginTop="80sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:layout_below="@+id/View1"
+        android:id="@+id/txt_amount"></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txt_amount"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Enter the GST"
+        android:textSize="24sp"
+        android:id="@+id/View2"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:layout_below="@+id/View2"
+        android:id="@+id/txt_gst_percent"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/txt_total_amount"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_cal"
+        android:text="Calculate"></Button>
+
+    <TextView
+        android:id="@+id/txt_gst_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:layout_below="@id/txt_gst_percent"></TextView>
+
+    <TextView
+        android:id="@+id/txt_total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:layout_below="@id/txt_gst_amount"></TextView>
+
+</RelativeLayout>
